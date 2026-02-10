@@ -1,6 +1,5 @@
 
 import React, { useState, useEffect } from 'react';
-import { IdCard } from './components/IdCard';
 import { GALLERY_ITEMS, DELEGATE_DATA } from './constants.tsx';
 
 const App: React.FC = () => {
@@ -62,27 +61,21 @@ const App: React.FC = () => {
             International Delegate <br/> <span className="text-blue-400">Temesgn Woldu</span>
           </h1>
           
-          <div className="mt-8 flex flex-col lg:flex-row items-center justify-center gap-12">
-            <div className="flex flex-col items-center gap-4">
-              <span className="text-blue-300 text-xs font-bold uppercase tracking-widest">Digital ID Card</span>
-              <IdCard />
-            </div>
-            <div className="hidden lg:block w-px h-64 bg-white/10"></div>
-            <div className="flex flex-col items-center gap-4">
-              <span className="text-blue-300 text-xs font-bold uppercase tracking-widest">Official Document</span>
-              <div className="relative group">
-                <img 
-                  src="input_file_0.png" 
-                  alt="Official ID Card" 
-                  className="w-full max-w-sm rounded-lg shadow-2xl border border-white/20 transition-transform group-hover:scale-105"
-                />
-                <div className="absolute inset-0 rounded-lg ring-1 ring-inset ring-white/20"></div>
-              </div>
+          <div className="mt-12 flex flex-col items-center gap-6">
+            <span className="text-blue-300 text-xs font-bold uppercase tracking-widest">Official Identification</span>
+            <div className="relative group max-w-2xl w-full mx-auto">
+              <div className="absolute -inset-1 bg-gradient-to-r from-blue-600 to-cyan-600 rounded-2xl blur opacity-20 group-hover:opacity-40 transition duration-1000 group-hover:duration-200"></div>
+              <img 
+                src="input_file_0.png" 
+                alt="Official ID Card" 
+                className="relative w-full rounded-xl shadow-2xl border border-white/10 transition-transform duration-500 group-hover:scale-[1.01]"
+              />
             </div>
           </div>
           
           <div className="mt-12 flex flex-col items-center gap-2 text-gray-400">
-            <i className="fa-solid fa-chevron-down animate-bounce mt-4"></i>
+            <span className="text-xs uppercase tracking-widest text-gray-500">Scroll for details</span>
+            <i className="fa-solid fa-chevron-down animate-bounce mt-2"></i>
           </div>
         </div>
       </header>
