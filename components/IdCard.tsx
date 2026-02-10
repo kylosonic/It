@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { DELEGATE_DATA } from '../constants.tsx';
 
@@ -40,7 +39,7 @@ export const IdCard: React.FC = () => {
         <div className="w-1/3">
           <div className="aspect-[3/4] rounded-lg border-2 border-blue-100 overflow-hidden shadow-inner bg-gray-200">
              <img 
-              src="input_file_1.png" 
+              src="photo_2026-02-10_21-43-45.jpg" 
               alt="Profile" 
               className="w-full h-full object-cover"
             />
